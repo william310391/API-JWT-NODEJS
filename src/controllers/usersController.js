@@ -1,5 +1,4 @@
 import { ResponseApi } from "../model/resposeApi.js";
-import { usersValidates } from "../Validates/usersValidates.js";
 import { usersRepository } from "../respositories/usersRepository.js";
 import { businessException } from "../exceptions/businessException.js";
 import { Encrypt } from "../utils/Encrypt.js";
