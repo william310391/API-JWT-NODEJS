@@ -4,6 +4,7 @@ export const rutas = {
     base: "/api/auth",
     register: "/register",
     login: "/login",
+    listar: "/listar",
   },
   admin: {
     base: "/api/admin",

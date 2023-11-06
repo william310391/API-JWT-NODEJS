@@ -12,4 +12,9 @@ router.post(rutas.auth.login, async (req, res) => {
   res.status(response.statusCode).json(response);
 });
 
+router.get(rutas.auth.listar,async(req,res)=>{
+  const response =await usersController.listar();
+  res.status(response.statusCode).json(response);
+})
+
 export default router;

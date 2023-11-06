@@ -15,9 +15,13 @@ export const usersRepository = {
         email: email,
       },
     });
-      
+
     return user;
-  }
+  },
+  findAll: async () => {
+    const users = await prisma.users.findMany();
+    return users;
+  },
 };
 
 

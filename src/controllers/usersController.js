@@ -39,4 +39,9 @@ export const usersController = {
       return businessException(500, "error al realizar el login");
     }
   },
+
+  listar: async()=>{
+    const users = await usersRepository.findAll();
+    return new ResponseApi(users);
+  }
 };
